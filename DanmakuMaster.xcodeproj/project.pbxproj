@@ -14,6 +14,9 @@
 		29F98BBC1AD5130200831923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F98BBB1AD5130200831923 /* Images.xcassets */; };
 		29F98BBF1AD5130200831923 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F98BBD1AD5130200831923 /* LaunchScreen.xib */; };
 		29F98BCB1AD5130200831923 /* DanmakuMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BCA1AD5130200831923 /* DanmakuMasterTests.m */; };
+		29F98BDB1AD5133A00831923 /* CommentTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BD61AD5133A00831923 /* CommentTextLayer.m */; };
+		29F98BDC1AD5133A00831923 /* RiverRunCommentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BD81AD5133A00831923 /* RiverRunCommentManager.m */; };
+		29F98BDD1AD5133A00831923 /* RiverRunCommentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BDA1AD5133A00831923 /* RiverRunCommentUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		29F98BC41AD5130200831923 /* DanmakuMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanmakuMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F98BC91AD5130200831923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F98BCA1AD5130200831923 /* DanmakuMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DanmakuMasterTests.m; sourceTree = "<group>"; };
+		29F98BD51AD5133A00831923 /* CommentTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTextLayer.h; sourceTree = "<group>"; };
+		29F98BD61AD5133A00831923 /* CommentTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTextLayer.m; sourceTree = "<group>"; };
+		29F98BD71AD5133A00831923 /* RiverRunCommentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiverRunCommentManager.h; sourceTree = "<group>"; };
+		29F98BD81AD5133A00831923 /* RiverRunCommentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiverRunCommentManager.m; sourceTree = "<group>"; };
+		29F98BD91AD5133A00831923 /* RiverRunCommentUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiverRunCommentUtil.h; sourceTree = "<group>"; };
+		29F98BDA1AD5133A00831923 /* RiverRunCommentUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiverRunCommentUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		29F98BAD1AD5130200831923 /* DanmakuMaster */ = {
 			isa = PBXGroup;
 			children = (
+				29F98BD41AD5133A00831923 /* DanmakuLib */,
 				29F98BB21AD5130200831923 /* AppDelegate.h */,
 				29F98BB31AD5130200831923 /* AppDelegate.m */,
 				29F98BB51AD5130200831923 /* ViewController.h */,
@@ -117,6 +127,19 @@
 				29F98BC91AD5130200831923 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29F98BD41AD5133A00831923 /* DanmakuLib */ = {
+			isa = PBXGroup;
+			children = (
+				29F98BD51AD5133A00831923 /* CommentTextLayer.h */,
+				29F98BD61AD5133A00831923 /* CommentTextLayer.m */,
+				29F98BD71AD5133A00831923 /* RiverRunCommentManager.h */,
+				29F98BD81AD5133A00831923 /* RiverRunCommentManager.m */,
+				29F98BD91AD5133A00831923 /* RiverRunCommentUtil.h */,
+				29F98BDA1AD5133A00831923 /* RiverRunCommentUtil.m */,
+			);
+			path = DanmakuLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F98BB71AD5130200831923 /* ViewController.m in Sources */,
+				29F98BDC1AD5133A00831923 /* RiverRunCommentManager.m in Sources */,
+				29F98BDD1AD5133A00831923 /* RiverRunCommentUtil.m in Sources */,
 				29F98BB41AD5130200831923 /* AppDelegate.m in Sources */,
+				29F98BDB1AD5133A00831923 /* CommentTextLayer.m in Sources */,
 				29F98BB11AD5130200831923 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

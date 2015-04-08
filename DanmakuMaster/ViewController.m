@@ -7,9 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "RiverRunCommentUtil.h"
+#import "RiverRunCommentManager.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<RiverRunCommentManagerDelegate>
+@property (strong, nonatomic) NSMutableArray *commentArray;
+@property (strong, nonatomic) NSTimer *commentTimer;
+@property (strong, nonatomic) RiverRunCommentManager *manager;
+@property CGFloat commentNUM;
 @end
 
 @implementation ViewController
@@ -17,7 +22,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _commentTimer = [NSTimer timerWithTimeInterval:0.1f
+                                            target:self selector:@selector(commentTimerFired)
+                                          userInfo:nil repeats:YES];
+    _commentNUM = 0;
+    [[NSRunLoop currentRunLoop] addTimer:_commentTimer forMode:NSRunLoopCommonModes];
+    self.view.backgroundColor = [UIColor cyanColor];
+    _commentArray = [NSMutableArray arrayWithArray:[self createVideoComment]];
+    _manager = [[RiverRunCommentManager alloc]initWithComments:_commentArray delegate:self andPresentView:self.view videoSize:self.view.bounds.size screenSize:self.view.bounds.size isLandscape:UIInterfaceOrientationIsLandscape(self.interfaceOrientation)];
 }
+
+- (CGFloat)willShowComments:(BOOL)seek {
+    return _commentNUM;
+}
+
+-(void)commentTimerFired
+{
+    _commentNUM+=0.1;
+}
+
+- (IBAction)clickBegin:(id)sender {
+    [_manager start];
+}
+
+- (IBAction)clickStop:(id)sender {
+    [_manager stop];
+    [_manager deleteAllCommentLayer];
+    [self.commentTimer invalidate];
+}
+
+- (NSArray*)createVideoComment {
+    NSInteger videoDuration = 10000;
+    NSInteger commentNum = 500;
+    NSMutableArray *videoComments = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < commentNum; i++) {
+        NSInteger vpos = arc4random_uniform((unsigned int)videoDuration);
+        
+        NSDictionary *commentInfo = @{
+                                      @"vpos": @(vpos),
+                                      @"body": @"Hello World！！！",
+                                      @"position": @([RiverRunCommentUtil commentPosition:[RiverRunCommentUtil getPosition]]),
+                                      @"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getFontSize]]),
+                                      @"color": @"#ffffff",
+                                      @"duration":@(3.f),
+                                      };
+        [videoComments addObject:commentInfo];
+    }
+    
+    return [videoComments sortedArrayUsingComparator:^NSComparisonResult(
+                                                                         NSDictionary *item1, NSDictionary *item2) {
+        NSInteger vpos1 = [item1[@"vpos"] intValue];
+        NSInteger vpos2 = [item2[@"vpos"] intValue];
+        return vpos1 > vpos2;
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
