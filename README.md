@@ -39,7 +39,7 @@ RiverRunCommentManager *_manger;
 ```
 
 ####弹幕的相关参数
-```javascript
+```c++
 举例：  NSDictionary *commentInfo = @{
                                       @"vpos": @(vpos),
                                       @"body": @“Hello World！！！",
@@ -63,11 +63,11 @@ duration：动画时间 数据类型float
 ```
 
 #####其他：
-定义的随机数相关
-获得位置的随机数可用[RiverRunCommentUtil getPosition]，
-如  @"position": @([RiverRunCommentUtil commentPosition:[RiverRunCommentUtil getPosition]])
-获得fontsize随机数可用[RiverRunCommentUtil getFontSize]
-如：@"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getFontSize]])
+定义的随机数相关  
+获得位置的随机数可用[RiverRunCommentUtil getPosition]，  
+如  @"position": @([RiverRunCommentUtil commentPosition:[RiverRunCommentUtil getPosition]])  
+获得fontsize随机数可用[RiverRunCommentUtil getFontSize]  
+如：@"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getFontSize]])  
 
 
 
