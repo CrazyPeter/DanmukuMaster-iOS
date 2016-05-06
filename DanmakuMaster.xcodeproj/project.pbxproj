@@ -13,21 +13,10 @@
 		29F98BBA1AD5130200831923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F98BB81AD5130200831923 /* Main.storyboard */; };
 		29F98BBC1AD5130200831923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F98BBB1AD5130200831923 /* Images.xcassets */; };
 		29F98BBF1AD5130200831923 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F98BBD1AD5130200831923 /* LaunchScreen.xib */; };
-		29F98BCB1AD5130200831923 /* DanmakuMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BCA1AD5130200831923 /* DanmakuMasterTests.m */; };
 		29F98BDB1AD5133A00831923 /* CommentTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BD61AD5133A00831923 /* CommentTextLayer.m */; };
 		29F98BDC1AD5133A00831923 /* RiverRunCommentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BD81AD5133A00831923 /* RiverRunCommentManager.m */; };
 		29F98BDD1AD5133A00831923 /* RiverRunCommentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F98BDA1AD5133A00831923 /* RiverRunCommentUtil.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		29F98BC51AD5130200831923 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29F98BA31AD5130200831923 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29F98BAA1AD5130200831923;
-			remoteInfo = DanmakuMaster;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		29F98BAB1AD5130200831923 /* DanmakuMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanmakuMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,9 +29,6 @@
 		29F98BB91AD5130200831923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29F98BBB1AD5130200831923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29F98BBE1AD5130200831923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		29F98BC41AD5130200831923 /* DanmakuMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanmakuMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29F98BC91AD5130200831923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29F98BCA1AD5130200831923 /* DanmakuMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DanmakuMasterTests.m; sourceTree = "<group>"; };
 		29F98BD51AD5133A00831923 /* CommentTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTextLayer.h; sourceTree = "<group>"; };
 		29F98BD61AD5133A00831923 /* CommentTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTextLayer.m; sourceTree = "<group>"; };
 		29F98BD71AD5133A00831923 /* RiverRunCommentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiverRunCommentManager.h; sourceTree = "<group>"; };
@@ -59,13 +45,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29F98BC11AD5130200831923 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				29F98BAD1AD5130200831923 /* DanmakuMaster */,
-				29F98BC71AD5130200831923 /* DanmakuMasterTests */,
 				29F98BAC1AD5130200831923 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				29F98BAB1AD5130200831923 /* DanmakuMaster.app */,
-				29F98BC41AD5130200831923 /* DanmakuMasterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,23 +85,6 @@
 			children = (
 				29F98BAF1AD5130200831923 /* Info.plist */,
 				29F98BB01AD5130200831923 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		29F98BC71AD5130200831923 /* DanmakuMasterTests */ = {
-			isa = PBXGroup;
-			children = (
-				29F98BCA1AD5130200831923 /* DanmakuMasterTests.m */,
-				29F98BC81AD5130200831923 /* Supporting Files */,
-			);
-			path = DanmakuMasterTests;
-			sourceTree = "<group>";
-		};
-		29F98BC81AD5130200831923 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				29F98BC91AD5130200831923 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,24 +122,6 @@
 			productReference = 29F98BAB1AD5130200831923 /* DanmakuMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		29F98BC31AD5130200831923 /* DanmakuMasterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29F98BD11AD5130200831923 /* Build configuration list for PBXNativeTarget "DanmakuMasterTests" */;
-			buildPhases = (
-				29F98BC01AD5130200831923 /* Sources */,
-				29F98BC11AD5130200831923 /* Frameworks */,
-				29F98BC21AD5130200831923 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29F98BC61AD5130200831923 /* PBXTargetDependency */,
-			);
-			name = DanmakuMasterTests;
-			productName = DanmakuMasterTests;
-			productReference = 29F98BC41AD5130200831923 /* DanmakuMasterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +133,6 @@
 				TargetAttributes = {
 					29F98BAA1AD5130200831923 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					29F98BC31AD5130200831923 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 29F98BAA1AD5130200831923;
 					};
 				};
 			};
@@ -212,7 +150,6 @@
 			projectRoot = "";
 			targets = (
 				29F98BAA1AD5130200831923 /* DanmakuMaster */,
-				29F98BC31AD5130200831923 /* DanmakuMasterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +162,6 @@
 				29F98BBA1AD5130200831923 /* Main.storyboard in Resources */,
 				29F98BBF1AD5130200831923 /* LaunchScreen.xib in Resources */,
 				29F98BBC1AD5130200831923 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29F98BC21AD5130200831923 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,23 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29F98BC01AD5130200831923 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29F98BCB1AD5130200831923 /* DanmakuMasterTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		29F98BC61AD5130200831923 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29F98BAA1AD5130200831923 /* DanmakuMaster */;
-			targetProxy = 29F98BC51AD5130200831923 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		29F98BB81AD5130200831923 /* Main.storyboard */ = {
@@ -385,40 +299,6 @@
 			};
 			name = Release;
 		};
-		29F98BD21AD5130200831923 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DanmakuMasterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanmakuMaster.app/DanmakuMaster";
-			};
-			name = Debug;
-		};
-		29F98BD31AD5130200831923 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DanmakuMasterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanmakuMaster.app/DanmakuMaster";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,14 +318,7 @@
 				29F98BD01AD5130200831923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		29F98BD11AD5130200831923 /* Build configuration list for PBXNativeTarget "DanmakuMasterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29F98BD21AD5130200831923 /* Debug */,
-				29F98BD31AD5130200831923 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

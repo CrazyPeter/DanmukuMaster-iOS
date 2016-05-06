@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,30 +15,64 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-ax-ABP">
-                                <rect key="frame" x="61" y="67" width="77" height="30"/>
-                                <state key="normal" title="Come On!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickBegin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bz2-Bw-SeJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLK-rM-AbM">
-                                <rect key="frame" x="56" y="178" width="86" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLK-rM-AbM">
+                                <rect key="frame" x="49" y="494" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="6nL-cu-g5I"/>
+                                    <constraint firstAttribute="height" constant="30" id="MOq-D8-vpt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clickStop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UOW-FG-M3t"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-ax-ABP">
+                                <rect key="frame" x="54" y="427" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="avt-fH-AGb"/>
+                                    <constraint firstAttribute="width" constant="77" id="m5S-8n-ONY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Come On!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBegin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bz2-Bw-SeJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="RLK-rM-AbM" secondAttribute="bottom" constant="44" id="1CC-dI-Oas"/>
+                            <constraint firstItem="RLK-rM-AbM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="33" id="3pq-VL-2R6"/>
+                            <constraint firstItem="gEz-ax-ABP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="SKx-73-i2v"/>
+                            <constraint firstItem="gEz-ax-ABP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Wis-KK-W9M"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gEz-ax-ABP" secondAttribute="bottom" constant="111" id="e2O-3I-G4A"/>
+                            <constraint firstItem="gEz-ax-ABP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="38" id="hqD-qT-PnD"/>
+                            <constraint firstItem="RLK-rM-AbM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ije-qC-foX"/>
+                            <constraint firstItem="gEz-ax-ABP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="117" id="jSB-nn-Ocs"/>
+                            <constraint firstItem="RLK-rM-AbM" firstAttribute="top" secondItem="gEz-ax-ABP" secondAttribute="bottom" constant="66" id="oGc-2A-s9e"/>
+                            <constraint firstItem="RLK-rM-AbM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="oTj-XO-XBu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SKx-73-i2v"/>
+                                <exclude reference="Wis-KK-W9M"/>
+                                <exclude reference="jSB-nn-Ocs"/>
+                                <exclude reference="ije-qC-foX"/>
+                                <exclude reference="oGc-2A-s9e"/>
+                                <exclude reference="oTj-XO-XBu"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

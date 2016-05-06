@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E899153208F22DEC947D705AD2D5BF2D370293EF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EE65A933767A1D9A4E717C837796DBB99727F334" : 0,
+    "E899153208F22DEC947D705AD2D5BF2D370293EF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AC687F69-529F-4D1E-9DCB-063F64D1DAD3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EE65A933767A1D9A4E717C837796DBB99727F334" : "",
+    "E899153208F22DEC947D705AD2D5BF2D370293EF" : "DanmukuMaster-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DanmakuMaster",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DanmakuMaster.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CrazyPeter\/DanmukuMaster-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E899153208F22DEC947D705AD2D5BF2D370293EF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CrazyPeter\/CrazyPeter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE65A933767A1D9A4E717C837796DBB99727F334"
+    }
+  ]
+}

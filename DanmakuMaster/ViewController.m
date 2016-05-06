@@ -27,7 +27,7 @@
                                           userInfo:nil repeats:YES];
     _commentNUM = 0;
     [[NSRunLoop currentRunLoop] addTimer:_commentTimer forMode:NSRunLoopCommonModes];
-    self.view.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.23f green:0.35f blue:0.62f alpha:1.00f];
     _commentArray = [NSMutableArray arrayWithArray:[self createVideoComment]];
     _manager = [[RiverRunCommentManager alloc]initWithComments:_commentArray delegate:self andPresentView:self.view videoSize:self.view.bounds.size screenSize:self.view.bounds.size isLandscape:UIInterfaceOrientationIsLandscape(self.interfaceOrientation)];
 }
@@ -52,7 +52,7 @@
 }
 
 - (NSArray*)createVideoComment {
-    NSInteger videoDuration = 10000;
+    NSInteger videoDuration = 1000;
     NSInteger commentNum = 500;
     NSMutableArray *videoComments = [NSMutableArray array];
     
@@ -61,9 +61,9 @@
         
         NSDictionary *commentInfo = @{
                                       @"vpos": @(vpos),
-                                      @"body": @"Hello World！！！",
-                                      @"position": @([RiverRunCommentUtil commentPosition:[RiverRunCommentUtil getPosition]]),
-                                      @"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getFontSize]]),
+                                      @"body": @"奔跑吧，弹幕！！！",
+                                      @"position": @([RiverRunCommentUtil commentPosition:[RiverRunCommentUtil getRandomPosition]]),
+                                      @"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getRandomFontSize]]),
                                       @"color": @"#ffffff",
                                       @"duration":@(3.f),
                                       };
@@ -72,6 +72,8 @@
     
     return [videoComments sortedArrayUsingComparator:^NSComparisonResult(
                                                                          NSDictionary *item1, NSDictionary *item2) {
+        NSLog(@"item - %@",item1);
+        
         NSInteger vpos1 = [item1[@"vpos"] intValue];
         NSInteger vpos2 = [item2[@"vpos"] intValue];
         return vpos1 > vpos2;

@@ -12,6 +12,6 @@
 @interface RiverRunCommentUtil : NSObject
 + (NSInteger)commentPosition:(NSString*)position;
 + (NSInteger)commentSize:(NSString*)fontSize;
-+ (NSString*)getFontSize;
-+ (NSString*)getPosition;
++ (NSString*)getRandomFontSize;
++ (NSString*)getRandomPosition;
 @end
