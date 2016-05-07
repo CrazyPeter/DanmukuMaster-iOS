@@ -10,7 +10,7 @@
 #import <CoreText/CoreText.h>
 #import <UIKit/UIKit.h>
 
-NSString* const COMMENT_FONT_NAME = @"STHeitiJ-Light";
+NSString* const COMMENT_FONT_NAME = @"Heiti SC";
 
 #define HEXCOLOR(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 \
 green:((c>>8)&0xFF)/255.0 \

@@ -387,6 +387,8 @@ CGFloat const COMMENT_TOP_OR_BOTTOM_DURATION  = 3.f;
       }
       [_showCommentItems removeObjectsInArray:deleteItems];
     }
+    
+    [deleteItems removeAllObjects];
     deleteItems = nil;
 }
 

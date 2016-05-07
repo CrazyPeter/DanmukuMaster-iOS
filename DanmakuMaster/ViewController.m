@@ -29,7 +29,7 @@
     [[NSRunLoop currentRunLoop] addTimer:_commentTimer forMode:NSRunLoopCommonModes];
     self.view.backgroundColor = [UIColor colorWithRed:0.23f green:0.35f blue:0.62f alpha:1.00f];
     _commentArray = [NSMutableArray arrayWithArray:[self createVideoComment]];
-    _manager = [[RiverRunCommentManager alloc]initWithComments:_commentArray delegate:self andPresentView:self.view videoSize:self.view.bounds.size screenSize:self.view.bounds.size isLandscape:UIInterfaceOrientationIsLandscape(self.interfaceOrientation)];
+    _manager = [[RiverRunCommentManager alloc]initWithComments:_commentArray delegate:self andPresentView:self.view videoSize:self.view.bounds.size screenSize:self.view.bounds.size isLandscape:[[UIApplication sharedApplication] statusBarOrientation]];
 }
 
 - (CGFloat)willShowComments:(BOOL)seek {
@@ -52,7 +52,7 @@
 }
 
 - (NSArray*)createVideoComment {
-    NSInteger videoDuration = 1000;
+    NSInteger videoDuration = 30000;
     NSInteger commentNum = 500;
     NSMutableArray *videoComments = [NSMutableArray array];
     
