@@ -1,5 +1,8 @@
 ###DanmukuMaster-iOS
 
+####预览效果
+![](http://g.recordit.co/CsA7KUkQJH.gif)  
+
 ####简介：
 弹幕引擎，使用coretext编写。比一般的UILabel要节省内存空间。经测试10秒内显示1000条弹幕可行。  
 
