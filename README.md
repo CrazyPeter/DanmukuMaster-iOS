@@ -43,14 +43,6 @@ RiverRunCommentManager *_manger;
 
 ####弹幕的相关参数
 ```c++
-举例：  NSDictionary *commentInfo = @{
-                                      @"vpos": @(vpos),
-                                      @"body": @“Hello World！！！",
-                                      @"position": @([RiverRunCommentUtil commentPosition:[self getPosition]]),
-                                      @"fontSize": @([RiverRunCommentUtil commentSize:[self getFontSize]]),
-                                      @"color": @"#ffffff",
-                                      @"duration":@(3.f),
-                                      };
 /*
 参数的含义：
 vpos：是开始出现的时间，以毫秒为单位，和服务器返回数据格式相反   数据类型int
@@ -63,6 +55,14 @@ color：颜色，格式：#ffffff, 数据类型string
 duration：动画时间 数据类型float
 “”（其他）  
 */
+举例：  NSDictionary *commentInfo = @{
+                                      @"vpos": @(vpos),
+                                      @"body": @“Hello World！！！",
+                                      @"position": @([RiverRunCommentUtil commentPosition:[self getPosition]]),
+                                      @"fontSize": @([RiverRunCommentUtil commentSize:[self getFontSize]]),
+                                      @"color": @"#ffffff",
+                                      @"duration":@(3.f),
+                                      };
 ```
 
 #####其他：
