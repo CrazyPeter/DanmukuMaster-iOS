@@ -65,6 +65,10 @@ duration：动画时间 数据类型float
                                       };
 ```
 
+####已知bug
+>存在部分的内存泄漏问题
+
+
 #####其他：
 定义的随机数相关  
 获得位置的随机数可用[RiverRunCommentUtil getPosition]，  
