@@ -71,11 +71,11 @@ duration：动画时间 数据类型float
 
 
 #####其他：
-定义的随机数相关  
+>定义的随机数相关  
 获得位置的随机数可用[RiverRunCommentUtil getPosition]，  
 如  @"position": @([RiverRunCommentUtil commentPosition:[RiverRunCommentUtil getPosition]])  
 获得fontsize随机数可用[RiverRunCommentUtil getFontSize]  
-如：@"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getFontSize]])  
+>如：@"fontSize": @([RiverRunCommentUtil commentSize:[RiverRunCommentUtil getFontSize]])  
 
 
 
